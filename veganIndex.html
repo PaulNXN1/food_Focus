@@ -57,7 +57,8 @@
   </nav><br>
   
   <main>
-    <h1>The Vegan Diet</h1><br>
+    <h1 class="">The Vegan Diet</h1><br>
+    <img class="h-1/4 w-1/2 object-none " src="https://images.indianexpress.com/2022/01/pexels-viktoria-slowikowska-5677793.jpg" alt="">
     <article>
       <h2>What is a Vegan Diet</h2> <br>
       <p>Vegan diets are made up of only plant-based foods. This type of diet includes fruits, vegetables, soy, legumes, nuts and nut butters, plant-based dairy alternatives, sprouted or fermented plant foods and whole grains. Vegan diets don’t include animal foods like eggs, dairy, meat, poultry or seafood. They also are devoid of animal byproducts such as honey (made by bees) and lesser-known animal-based ingredients like whey, casein, lactose, egg white albumen, gelatin, carmine, shellac, animal-derived vitamin D3 and fish-derived omega-3 fatty acids.</p><br>
@@ -78,21 +79,30 @@
         
         Iron is a vital component of metabolism and heart health. It is found mostly in animal foods. Although fortified whole grains, beans, lentils, spinach and other plant-based foods provide iron, it’s in the form of non-heme iron, which is not as bioavailable as the heme iron found in animal foods. <br> <br>
         
-        Omega-3 fatty acids are a type of polyunsaturated fat shown to support cardiovascular health. The three most common types we eat are alpha-linolenic acid (ALA), eicosapentaenoic acid (EPA) and docosahexaenoic acid (DHA). ALA is found in plant sources like flaxseed, chia seeds and walnuts, but EPA and DHA are found mainly in animal foods with the exception of some marine plant sources. ALA is converted by our bodies into EPA and DHA, but only in small quantities. Vegan options for EPA and DHA are microalgae and seaweed food products or supplements.</h2>
+        Omega-3 fatty acids are a type of polyunsaturated fat shown to support cardiovascular health. The three most common types we eat are alpha-linolenic acid (ALA), eicosapentaenoic acid (EPA) and docosahexaenoic acid (DHA). ALA is found in plant sources like flaxseed, chia seeds and walnuts, but EPA and DHA are found mainly in animal foods with the exception of some marine plant sources. ALA is converted by our bodies into EPA and DHA, but only in small quantities. Vegan options for EPA and DHA are microalgae and seaweed food products or supplements.
+      </h2>
 
     </article><br>
 
     <section>
       <h2>Random Recipe</h2>
-      <figure class="randomRecipe">
-        <h3>data.hits[i].recipe.label</h3>
-        <ul> Lists of Ingredients
-          <li>./recipe.igredients[i].text
-            <li>./recipe.ingredients[i].image</li>
-          </li>
-          <a href="data.hits[i].recipe.url">Site to recipe</a>
+      <figure class="random-recipe">
+        <h3 id="recipe-name"></h3>
+        <img src="" alt="" id="food-img">
+        <ul id="list-ingred">
+          <p class="font-semibold">Lists of Ingredients</p>
+          <!-- <li class="list-ingred"></li>
+          <li class="list-ingred"></li>
+          <li class="list-ingred"></li>
+          <li class="list-ingred"></li>
+          <li class="list-ingred"></li>
+          <li class="list-ingred"></li>
+          <li class="list-ingred"></li>
+          <li class="list-ingred"></li> -->
+
+          <a id="recipe-site" href="data.hits[i].recipe.url">Site to recipe</a>
         </ul>
-        <button class="bg-green-500 text-white hover:bg-green-200 font-bold py-2 px-4 mt-3 rounded items-center rounded">Generate Another Recipe</button>
+        <button id="generate" class="bg-green-500 text-white hover:bg-green-200 font-bold py-2 px-4 mt-3 rounded items-center rounded">Generate Another Recipe</button>
       </figure>
     </section>
   </main>
