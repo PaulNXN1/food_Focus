@@ -29,3 +29,25 @@ function getApi(requestUrl) {
 }
 
 getApi(requestUrl);
+
+window.onload = function(){
+// call area that heading will go
+var heading = document.getElementById('heading');
+// create element h1 
+varh1El = document.createElement('h1');
+// modify element h1
+h1El.textContent = "A Gluten Free Life";
+h1El.setAttribute("class", "animate__bounceOut");
+// append 
+heading.appendChild(h1El);
+  }
+
+// window.onload=function(){
+//   var example = document.getElementById('divone');
+//   var h1 = document.createElement('h1');
+//   h1.innerText = "hi";
+//   example.appendChild(h1);
+//       }
+
+
+
