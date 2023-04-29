@@ -15,26 +15,24 @@ var ingredientLinesData = []
 // var edaman = 'https://api.edamam.com/api/recipes/v2?type=public&app_id=' + edamanID + '&app_key=' + edamanAPIKey + '&diet='+ dietInput + '&health=' + input + '&excluded=' + excludeIngredient + '&random=' + bootLeanOption;
 
 function getRecipe() { //responsible for data needed
-  const url = "https://api.edamam.com/api/recipes/v2?type=public&app_id=8f015481&app_key=04f42a1106f1c5216b12df8b78208f16&diet=balanced&health=vegan&random=true"
+  const url = "https://api.edamam.com/api/recipes/v2?type=public&app_id=8f015481&app_key=04f42a1106f1c5216b12df8b78208f16&diet=balanced&health=vegan&&mealType=Breakfast&mealType=Dinner&mealType=Lunch&random=true"
   $.ajax( {
     url: url,
     method: 'GET',
   })
-
   .then(function(response) {
 
-    for( i = 0; i < 2; i++) {
+    for( i = 0; i < 5; i++) {
       result.push(response.hits[i])
-      $('#recipe-name').html(result[0].recipe.label)
-      $('#food-img').attr("src", result[0].recipe.image)
-      $('#recipe-site').attr("href", result[0].recipe.url, )
+      // var i = result.shift();
+      $('#recipe-name').html(result[i].recipe.label)
+      $('#food-img').attr("src", result[i].recipe.image)
+      $('#recipe-site').attr("href", result[i].recipe.url )
       result[0].recipe.source
-      
-      
-
+      // return false;
     }   
     ingredientLinesData.push(result[0].recipe.ingredientLines)
-    for( i = 0; i < ingredientLinesData.length; ++i) {
+    for( i = 0; i < ingredientLinesData.length; i++) {
       console.log(ingredientLinesData);
       var liEL = document.createElement('li')
       $.each( ingredientLinesData[0], function(key, value){
@@ -51,17 +49,12 @@ function getRecipe() { //responsible for data needed
 function processRecipeData() { //process data on site
   result
   // Name of Recipe
-  for( i = 0; i < 3; i++) {
-      console.log(result[0].recipe.label)
-
-  }
+  console.log(result[0].recipe.label)
   $('#recipe-name').text(result[0].recipe.label)
   // Picture of recipe
   result[0].recipe.image
   // Ingredients
-  for( i = 0; i < 5; i++) {
-    console.log(result[0].recipe.ingredientLines[i])
-  }
+  console.log(result[0].recipe.ingredientLines[i])
   // Recommended serving size
   result[0].recipe.yield
   // Nutrients 
