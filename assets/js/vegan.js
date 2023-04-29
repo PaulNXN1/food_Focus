@@ -27,17 +27,19 @@ function getRecipe() { //responsible for data needed
       result.push(response.hits[i])
       $('#recipe-name').html(result[0].recipe.label)
       $('#food-img').attr("src", result[0].recipe.image)
-      
+      $('#recipe-site').attr("href", result[0].recipe.url, )
+      result[0].recipe.source
       
       
 
     }   
     ingredientLinesData.push(result[0].recipe.ingredientLines)
-    for( i = 0; i < ingredientLinesData.length; i++) {
-
-      var liEL = $('<li>').addClass('list-ingred').text(ingredientLinesData[i])
-      // $('.list-ingred').html(result[0].recipe.ingredientLines[i])
-      ingredEL.append(liEL)
+    for( i = 0; i < ingredientLinesData.length; ++i) {
+      console.log(ingredientLinesData);
+      var liEL = document.createElement('li')
+      $.each( ingredientLinesData[0], function(key, value){
+        $(ingredEL).append(value + '<br>')
+      })
       }
     // call next function
 
@@ -78,8 +80,7 @@ function processRecipeData() { //process data on site
   var vitD = result[0].recipe.totalNutrients.VITD.label // vitamin D
   var vitDVal = result[0].recipe.totalNutrients.VITD.quantity // by µg
   // Link to Recipe
-  $('#recipe-site').attr( "href=", result[0].recipe.url, )
-  result[0].recipe.source
+
 }
 
 // var btnEL = document.getElementById('generate').addEventListener('click', getRecipe)
