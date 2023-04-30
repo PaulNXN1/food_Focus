@@ -13,28 +13,28 @@
 <!-- Main Header -->
 <!-- Toolbar link example <p><a href="html_images.asp">HTML Images</a></p> -->
      
-<header id="header">
-    
+<header id="header"  class="border-box">
+ 
+  <nav> 
+  <!-- Toolbar using foundation formatting -->
     <ul class="menu align-left">
+  <!--Links to the main index page  -->
         <li class="is-active"><a href="./index.html">Main</a></li>
+  <!-- Links to the Gluten Free Home page/index.html  -->
         <li><a href="./glutenindex.html">Gluten Home</a></li>
-  <!-- Will link to the recipe API -->
+<!-- Will link to the recipes API -->
         <li><a>Recipes</a></li>
     </ul>
 
+  </nav>
 
-        <div id="heading"> 
+  <div id="heading"></div>  
             <!-- <h1 id="heading"> A Gluten Free Life</h1> -->
-        </div>   
-    </nav>
-
+  
 </header> 
 
 <body id="gluten-body">
-
-  
-
-    
+   
 <!-- Section: Image Gallery From Foundation   -->
 
     <div id="second-heading" class="container">
@@ -128,20 +128,21 @@
         <p> 
             <a href="//www.bbcgoodfood.com/howto/guide/top-10-tips-gluten-free-diet">Tips on Gluten Free from BBC</a>
         </p>
-        
+    
+    <h2> Gluten Free Recipes</h2>    
+    
+    <!-- Area for restaurant search input -->
+    <div id="recipe-Search" > 
+
+    </div> 
+
 </section>
 
-<script src="js/vendor/jquery.js"></script>
+<!-- <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.min.js"></script>
+    <script src="js/vendor/foundation.min.js"></script> -->
 
-<script>
-      
-      $(document).foundation();
-</script>
-
-
-<script src="./gluten-assets/glutenscript.js"></script>
+<script src="gluten-assets/glutenscript.js"></script>
 
 </body>
 </html> 

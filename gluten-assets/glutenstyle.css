@@ -5,10 +5,11 @@ body {
 
 /* Tailwind format */
 #header{
-    border-color: orangered;
-    border-top-width: 2px;
-    border-bottom-width: 2px;
-    background-color: rgb(233, 177, 108);
+    border: 7px solid darkblue;
+    /* border-top-width: 2px;
+    border-bottom-width: 2px; */
+    background-color: white;
+    padding: .5%;
 }
 
 h1 {
