@@ -1,0 +1,29 @@
+body {
+    background-color: bisque;
+}
+
+
+/* Tailwind format */
+#header{
+    border-color: orangered;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+}
+
+h1 {
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+
+h2 {
+    text-align: center;
+}
+.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+}
+
+
