@@ -1,7 +1,12 @@
 .form-select {
-    width: 35%;
+    width: 11%;
 }
 
 body {
-    background-color: blanchedalmond;
+    background-image: linear-gradient(rgb(212, 212, 212), rgb(164, 223, 249), rgb(157, 157, 180))
+    
+}
+
+.col-md-4 {
+    background-blend-mode: lighten;
 }
