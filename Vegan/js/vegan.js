@@ -59,11 +59,11 @@ function getRecipe() { //responsible for data needed
     var vitB12 = ingredientNutrients[0].VITB12.label + ' : ' + ingredientNutrients[0].VITB12.quantity.toFixed(2) + ' ' + ingredientNutrients[0].VITB12.unit
     var vitD = ingredientNutrients[0].VITD.label + ' : ' + ingredientNutrients[0].VITD.quantity.toFixed(2) + ' ' + ingredientNutrients[0].VITD.unit
     
-$('.omega3').html(omega3);
-$('.protein').html(protein);
-$('.calcium').html(calcium);
-$('.iron').html(iron);
-$('.vitB12').html(vitB12);
+    $('.omega3').html(omega3);
+    $('.protein').html(protein);
+    $('.calcium').html(calcium);
+    $('.iron').html(iron);
+    $('.vitB12').html(vitB12);
     $('.vitD').html(vitD);
   })
 }
