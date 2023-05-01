@@ -1,5 +1,19 @@
 // $(document).foundation();
+document.querySelector('header');
 
+
+function headerBanner() {
+// call area that heading will go
+var heading = document.getElementById('heading');
+// create element h1 
+var h1El = document.createElement('h1');
+// modify element h1
+h1El.textContent = "A Gluten Free Life";
+h1El.setAttribute("class", "animate__bounceOut");
+// append 
+heading.append(h1El);
+  }
+headerBanner()
 // Function to create input box for recipe search
 
 
@@ -7,16 +21,26 @@ function recipeEl() {
   // call area that heading will go
   var recipeSearchEl = document.getElementById('recipe-Search');
   // create inputbox and label
-  var recipeInputEl = document.createElement('input', search);
+  var recipeInputEl = document.createElement('input');
   var recipeLabel =document.createElement("label");
-  // modify element h1
-  recipeLabel.textContent = "Search GF Recipes";
- 
-  // append 
-recipeLabel.append(recipeSearchEl);
-recipeInputEl.append(recipeSearchEl);
-    }
+  var recipeButton =document.createElement('button');
   
+  // modify element h1
+  recipeLabel.setAttribute ('id','label');
+  recipeLabel.textContent = "Search for GF Recipes";
+  recipeInputEl.setAttribute ('id','input');
+  recipeButton.textContent='SUBMIT';
+	recipeButton.setAttribute('id', 'submit');
+  // append 
+  recipeLabel.appendChild(recipeSearchEl);
+  recipeInputEl.appendChild(recipeSearchEl);
+	recipeButton.appendChild(recipeSearchEl);
+    }
+    recipeEl()
+
+
+
+
 
 
 // import { corePlugins } from '../src/corePlugins'
@@ -50,19 +74,6 @@ recipeInputEl.append(recipeSearchEl);
 // }
 
 // getApi(requestUrl);
-document.querySelector('header');
-
-function headerBanner() {
-// call area that heading will go
-var heading = document.getElementById('heading');
-// create element h1 
-var h1El = document.createElement('h1');
-// modify element h1
-h1El.textContent = "A Gluten Free Life";
-h1El.setAttribute("class", "animate__bounceOut");
-// append 
-heading.append(h1El);
-  }
 
 // window.onload=function(){
 //   var example = document.getElementById('divone');
