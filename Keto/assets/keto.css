@@ -10,6 +10,7 @@
 body{
     background: beige;
    color: darkgreen;
+   text-align: center;
 }
 .nav-list {
     color: white;
@@ -52,4 +53,34 @@ a:hover{
 .cons{
     font-size: 2em;
     text-decoration: underline;
+}
+
+.container{
+    display: inline-block;
+    background: darkgreen;
+    border: 5px solid grey;
+    border-radius: 40px;
+}
+
+.keto-button{
+    display: inline-block;
+    padding: 20px 20px;
+    color: darkgreen ;
+    background:white;
+    border: 1px solid darkgreen;
+    border-radius: 5px;
+
+}
+
+.keto-button:hover {
+    background: gray;
+    text-transform: uppercase;
+}
+
+.h-tag{
+    color: white;
+}
+
+#h2{
+    color: white;
 }
