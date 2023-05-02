@@ -5,6 +5,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gluten Free</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="./gluten-assets/glutenstyle.css" />
 
@@ -132,21 +134,57 @@
     <h2> Gluten Free Recipes</h2>    
     
     <!-- Area for restaurant search input to be connected to API -->
-    <div id="recipe-Search" > 
+      
+      
+    <div id="recipe-Search"  class="flex justify-center self-center">
+        <figure class="flex flex-col items-center">
+          <h3 id="recipe-name" class="flex justify-items-center font-bold"></h3>
+          <img src="" alt="" id="food-img">          
+          <a id="recipe-site" class="font-semibold py-2 mt-px">&#8594; Link to Recipe &#8592;</a>
+          <figure class="grid grid-cols-2 gap-6">        
+            <ul id="list-ingred" class="">
+            <p class="font-semibold flex py-2">Lists of Ingredients <br></p>
+            </ul>
+  
+            <ul id="nutrient" class="">
+              <p class="font-semibold py-2">List of Key Nutrients</p>
+              <li class="omega3"></li>
+              <li class="protein"></li>
+              <li class="calcium"></li>
+              <li class="iron"></li>
+              <li class="vitB12"></li>
+              <li class="vitD"></li>
+            </ul></figure>
+  
+          <button id="generate" class="bg-green-500 text-white hover:bg-green-200 font-bold py-2 px-4 mt-3 ">Generate Another Recipe</button>
+        </figure>
+      </div>
 
-    </div> 
+   
 
 </section>
 
 <!-- <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.min.js"></script> -->
+<<<<<<< HEAD
+
+    <!-- J Query Link -->
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" 
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer">
+    </script>
+
+=======
 <script 
 src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" 
 integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" 
 crossorigin="anonymous" 
 referrerpolicy="no-referrer">
 </script>
+>>>>>>> 479fe3546381366e2b7988c996a263d49b4722fe
 <script src="./gluten-assets/glutenscript.js"></script>
 
 </body>
