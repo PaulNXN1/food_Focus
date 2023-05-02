@@ -26,7 +26,7 @@ function recipeEl() {
   var recipeButton =document.createElement('button');
   
   // modify element h1
-  recipeLabel.setAttribute ('id','label');
+  recipeLabel.setAttribute ('id','recipeLabel');
   recipeLabel.textContent = "Search for GF Recipes";
   recipeInputEl.setAttribute ('id','input');
   recipeButton.textContent='SUBMIT';
@@ -39,8 +39,7 @@ function recipeEl() {
     recipeEl()
 
 
-
-
+    
 
 
 // import { corePlugins } from '../src/corePlugins'
