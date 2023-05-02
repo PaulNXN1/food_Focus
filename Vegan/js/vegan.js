@@ -59,44 +59,13 @@ function getRecipe() { //responsible for data needed
     var vitB12 = ingredientNutrients[0].VITB12.label + ' : ' + ingredientNutrients[0].VITB12.quantity.toFixed(2) + ' ' + ingredientNutrients[0].VITB12.unit
     var vitD = ingredientNutrients[0].VITD.label + ' : ' + ingredientNutrients[0].VITD.quantity.toFixed(2) + ' ' + ingredientNutrients[0].VITD.unit
     
-$('.omega3').html(omega3);
-$('.protein').html(protein);
-$('.calcium').html(calcium);
-$('.iron').html(iron);
-$('.vitB12').html(vitB12);
+    $('.omega3').html(omega3);
+    $('.protein').html(protein);
+    $('.calcium').html(calcium);
+    $('.iron').html(iron);
+    $('.vitB12').html(vitB12);
     $('.vitD').html(vitD);
   })
-}
-
-
-function processRecipeNutrients() { //process data on site
-  result
-  // Name of Recipe
-  console.log(result[0].recipe.label)
-  $('#recipe-name').text(result[0].recipe.label)
-  // Picture of recipe
-  result[0].recipe.image
-  // Ingredients
-  console.log(result[0].recipe.ingredientLines[i])
-  // Recommended serving size
-  result[0].recipe.yield
-  // Nutrients 
-  result[0].recipe.calories
-  var omega3 = result[0].recipe.totalNutrients.FAPU.label // Omega 3(Polyunsaturated)
-  result[0].recipe.totalNutrients.FAPU.quantity // by gram result[0].recipe.totalNutrients.FAPU.unit
-  var omega3Val = result[0].recipe.totalNutrients.FAPU.quantity + ' ' + result[0].recipe.totalNutrients.FAPU.unit
-  var protein = result[0].recipe.totalNutrients.PROCNT.label // Protein
-  var proteinVal = result[0].recipe.totalNutrients.PROCNT.quantity + ' ' + result[0].recipe.totalNutrients.PROCNT.unit// by gram
-  var calcium = result[0].recipe.totalNutrients.CA.label // calcium
-  var calciumVal = result[0].recipe.totalNutrients.CA.quantity + ' ' + result[0].recipe.totalNutrients.CA.unit// by mg
-  var iron = result[0].recipe.totalNutrients.FE.label // iron
-  var ironVal = result[0].recipe.totalNutrients.FE.quantity + ' ' + result[0].recipe.totalNutrients.FE.unit//by mg
-  var vitB12 = result[0].recipe.totalNutrients.VITB12.label // vitamin B12
-  var vitB12Val = result[0].recipe.totalNutrients.VITB12.quantity + ' ' + result[0].recipe.totalNutrients.VITB12.unit// by µg
-  var vitD = result[0].recipe.totalNutrients.VITD.label // vitamin D
-  var vitDVal = result[0].recipe.totalNutrients.VITD.quantity + ' ' + result[0].recipe.totalNutrients.VITD.unit// by µg
-  // Link to Recipe
-
 }
 
 function refreshPage(){
@@ -107,3 +76,34 @@ $('#generate').on('click', refreshPage)
 var btnEL = $('generate')
 // $('#generate').on('click', getRecipe)
 $(window).on('load', getRecipe);
+
+
+// function processRecipeNutrients() { //process data on site
+//     result
+//     Name of Recipe
+//     console.log(result[0].recipe.label)
+//     $('#recipe-name').text(result[0].recipe.label)
+//     // Picture of recipe
+//     result[0].recipe.image
+//     // Ingredients
+//     console.log(result[0].recipe.ingredientLines[i])
+//     // Recommended serving size
+//     result[0].recipe.yield
+//     // Nutrients 
+//     result[0].recipe.calories
+//     var omega3 = result[0].recipe.totalNutrients.FAPU.label // Omega 3(Polyunsaturated)
+//     result[0].recipe.totalNutrients.FAPU.quantity // by gram result[0].recipe.totalNutrients.FAPU.unit
+//     var omega3Val = result[0].recipe.totalNutrients.FAPU.quantity + ' ' + result[0].recipe.totalNutrients.FAPU.unit
+//     var protein = result[0].recipe.totalNutrients.PROCNT.label // Protein
+//     var proteinVal = result[0].recipe.totalNutrients.PROCNT.quantity + ' ' + result[0].recipe.totalNutrients.PROCNT.unit// by gram
+//     var calcium = result[0].recipe.totalNutrients.CA.label // calcium
+//     var calciumVal = result[0].recipe.totalNutrients.CA.quantity + ' ' + result[0].recipe.totalNutrients.CA.unit// by mg
+//     var iron = result[0].recipe.totalNutrients.FE.label // iron
+//     var ironVal = result[0].recipe.totalNutrients.FE.quantity + ' ' + result[0].recipe.totalNutrients.FE.unit//by mg
+//     var vitB12 = result[0].recipe.totalNutrients.VITB12.label // vitamin B12
+//     var vitB12Val = result[0].recipe.totalNutrients.VITB12.quantity + ' ' + result[0].recipe.totalNutrients.VITB12.unit// by µg
+//     var vitD = result[0].recipe.totalNutrients.VITD.label // vitamin D
+//     var vitDVal = result[0].recipe.totalNutrients.VITD.quantity + ' ' + result[0].recipe.totalNutrients.VITD.unit// by µg
+//     Link to Recipe
+  
+//   }
