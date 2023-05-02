@@ -1,0 +1,17 @@
+body {
+    
+    background-color: rgb(204, 226, 255);
+    padding: 2%;
+    
+}
+
+
+.topicSection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
+}
