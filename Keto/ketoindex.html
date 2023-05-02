@@ -47,6 +47,36 @@
         </ul>
     </div>
 
-    <script src="./assets/ketojs.js"></script>
+    <section class="flex justify-center self-center">
+        <figure class="flex flex-col items-center">
+          <h3 id="recipe-name" class="flex justify-items-center font-bold"></h3>
+          <img src="" alt="" id="food-img">          
+          <a id="recipe-site" class="font-semibold py-2 mt-px">&#8594; Link to Recipe &#8592;</a>
+          <figure class="grid grid-cols-2 gap-6">        
+            <ul id="list-ingred" class="">
+            <p class="font-semibold flex py-2">Lists of Ingredients <br></p>
+            </ul>
+  
+            <ul id="nutrient" class="">
+              <p class="font-semibold py-2">List of Key Nutrients</p>
+              <li class="omega3"></li>
+              <li class="protein"></li>
+              <li class="calcium"></li>
+              <li class="iron"></li>
+              <li class="vitB12"></li>
+              <li class="vitD"></li>
+            </ul></figure>
+  
+          <button id="generate" class="">Generate Another Recipe</button>
+        </figure>
+      </section>
+
+      <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" 
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer">
+      </script>
+      <script src="./assets/js/keto.js"></script>
 </body>
 </html>

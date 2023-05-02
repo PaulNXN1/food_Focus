@@ -1,12 +1,17 @@
-.form-select {
-    width: 11%;
-}
-
 body {
-    background-image: linear-gradient(rgb(212, 212, 212), rgb(164, 223, 249), rgb(157, 157, 180));
+    
+    background-color: rgb(204, 226, 255);
+    padding: 2%;
     
 }
 
-.col-md-4 {
-    background-blend-mode: lighten;
+
+.topicSection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
 }
