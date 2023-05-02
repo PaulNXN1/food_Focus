@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     border: 0;
-    color: darkgreen;
     font-weight: bolder;
 
     
@@ -10,6 +9,25 @@
 
 body{
     background: beige;
+   color: darkgreen;
+}
+.nav-list {
+    color: white;
+    background:darkgreen;
+    border: 1px solid darkgreen;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a:hover{
+    background:linear-gradient(to right, white, lightgreen,green,darkgreen);
+    color:pink
 }
 
 .header h1{
