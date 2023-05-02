@@ -2,10 +2,15 @@
     padding: 0;
     margin: 0;
     border: 0;
+    color: darkgreen;
+    font-weight: bolder;
 
     
 }
 
+body{
+    
+}
 .nav{
     color: darkblue;
     font-weight: bolder;
@@ -14,4 +19,28 @@
     align-items: center;
     padding: 10px 10px
 
+}
+
+.header h1{
+    font-size: 5em;
+    text-decoration:underline;
+    display: flex;
+
+
+
+}
+
+.header h2{
+    font-size: 3em;
+
+}
+
+.pros{
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+.cons{
+    font-size: 2em;
+    text-decoration: underline;
 }
