@@ -6,78 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gluten Free</title>
     <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="./assets/glutenstyle.css" />
+    <link rel="stylesheet" href="./gluten-assets/glutenstyle.css" />
 
 </head>
 
 <!-- Main Header -->
-
+<!-- Toolbar link example <p><a href="html_images.asp">HTML Images</a></p> -->
      
-<header id="header">
-    
+<header id="header"  class="border-box">
+ 
+  <nav> 
+  <!-- Toolbar using foundation formatting -->
     <ul class="menu align-left">
-        <li class="is-active"><a>Main</a></li>
-        <li><a>Gluten-Free</a></li>
+  <!--Links to the main index page  -->
+        <li class="is-active"><a href="./index.html">Main</a></li>
+  <!-- Links to the Gluten Free Home page/index.html  -->
+        <li><a href="./glutenindex.html">Gluten Home</a></li>
+<!-- Will link to the recipes API -->
         <li><a>Recipes</a></li>
     </ul>
 
+  </nav>
 
-        <div> 
-            <h1> A Gluten Free Life</h1>
-        </div>   
-    </nav>
-
+  <div id="heading"></div>  
+            <!-- <h1 id="heading"> A Gluten Free Life</h1> -->
+  
 </header> 
 
 <body id="gluten-body">
-
-  
-
-    
+   
 <!-- Section: Image Gallery From Foundation   -->
 
-    <div id="main-image" class="card">
+    <div id="second-heading" class="container">
         <h2>A Diverse Diet That's Gluten Free is Possible!</h2>
     </div>
-    <img src="assets/images/diverse foods.jpg" alt="All Foods" width="400" height="350" class="center">
-    <div class="card-section">
-    </div>
-  </div>
+    
+    <div id="main-image" class= "card-section">
+    <img src="gluten-assets/images/diverse foods.jpg" alt="All Foods" width="400" height="350" class="center">
+     </div>
 
-<section class="grid-container">
-    <div class="grid-x grid-margin-x small-up-2 medium-up-3">
-      
-        <div class="cell">
-        <div class="card">
+     <div class = "container" id="image-container">
+      <div class="row">
+        <div class="column">
+          <div class="card" > 
             <h4>Grains such as rice, aramanth and quinoa are naturally gluten free</h4>
-            <img src="assets/images/grains.jpg" alt="Grains" width="200" height="150" >
-          <div class="card-section">
+            <img src= "gluten-assets/images/grains2.jpg">
           </div>
         </div>
-      </div>
-    
-    <div class="cell">
-        <div class="card">
+
+        <div class="column">
+          <div class="card">
             <h4>Fruits and Veggies are naturally Gluten Free</h4>
-            <img src="gluten-assets/images/produce2.jpg" alt="Produce" width="200" height="150">
-          <div class="card-section">
+            <img src= "gluten-assets/images/produce2.jpg">
+          </div>
         </div>
-      </div>
-    </div>
-    
-    <div class="cell">
-        <div class="card">
+
+        <div class="column">
+          <div class="card">
             <h4>Check packaging for pre-made sauces</h4>
-            <img src="gluten-assets/images/sauces 2.jpg" alt="Produce" width="200" height="150">
-          <div class="card-section">
+            <img src= "gluten-assets/images/sauces 2.jpg">
+          </div>
         </div>
+
+        <div class="column">
+          <div class="card">
+            <h4>And of course most proteins have no gluten</h4>
+            <img src= "gluten-assets/images/proteins.jpg">
+          </div>
+        </div>
+
       </div>
-    </div>
+    </div>  
+
   </section>
 
 <!-- Information Section -->
 <!-- Tailwind grid formatting -->
-<section class="grid grid-rows-3 divide-x">
+
+<section id="information" class="grid grid-rows-3 divide-x">
     <h2> Just Exactly What is Gluten? </h2>
         <p>
             Gluten is a group of proteins found in cereal grains such as wheat, barley, and rye.
@@ -92,9 +98,9 @@
                 <li>May relieve symptoms of celiac disease and gluten sensitivity</li>
                 <li> lead to an increase in nutrient-dense whole foods, such as fruits and vegetables</li>
                 <li> Can lead to weight loss as gluten-free foods often contain fewer calories and less sugar and fat than their gluten-containing counterparts</li>
-            
+            </ol>
         <h3> Cons:</h3>
-
+            <ol>
                 <li> Can be more expensive as gluten-free products are often pricier than regular products</li>
                 <li> May be lower in fiber, iron, and B vitamins due to the removal of fortified grains and cereals</li>
                 <li> May limit food choices and make it more challenging to eat out or find convenient, on-the-go options.</li>
@@ -122,15 +128,21 @@
         <p> 
             <a href="//www.bbcgoodfood.com/howto/guide/top-10-tips-gluten-free-diet">Tips on Gluten Free from BBC</a>
         </p>
+    
+    <h2> Gluten Free Recipes</h2>    
+    
+    <!-- Area for restaurant search input to be connected to API -->
+    <div id="recipe-Search" > 
+
+    </div> 
+
 </section>
 
-<script src="js/vendor/jquery.js"></script>
+<!-- <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.min.js"></script>
-<script>
-      $(document).foundation();
-    </script>
-<script src="./gluten-assets/script.js"></script>
+    <script src="js/vendor/foundation.min.js"></script> -->
+
+<script src="./gluten-assets/glutenscript.js"></script>
 
 </body>
 </html> 
