@@ -5,6 +5,10 @@ body {
     
 }
 
+#h1 {
+    font-size: 50px;
+}
+
 #topSection {
 
     text-align: center;
@@ -34,4 +38,11 @@ body {
 
 footer {
     text-align: center;
+}
+
+#firstImage {
+    
+    border-radius: 90px;
+    align-items: center;
+   
 }
