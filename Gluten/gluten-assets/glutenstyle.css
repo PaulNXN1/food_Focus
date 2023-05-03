@@ -51,6 +51,21 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#allergy{
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+#allergies{
+  border: 2px solid black;
+  display: block;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
 /* Float four columns side by side */
 .column {
   float: left;
