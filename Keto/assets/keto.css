@@ -2,14 +2,33 @@
     padding: 0;
     margin: 0;
     border: 0;
-    color: darkgreen;
     font-weight: bolder;
 
     
 }
 
 body{
-    
+    background: beige;
+   color: darkgreen;
+   text-align: center;
+}
+.nav-list {
+    color: white;
+    background:darkgreen;
+    border: 1px solid darkgreen;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a:hover{
+    background:linear-gradient(to right, white, lightgreen,green,darkgreen);
+    color:pink
 }
 
 #allergy{
@@ -49,4 +68,37 @@ body{
 .cons{
     font-size: 2em;
     text-decoration: underline;
+}
+
+.container{
+    display: inline-block;
+    background: darkgreen;
+    border: 5px solid grey;
+    border-radius: 50px;
+    align-self: center;
+}
+
+.keto-button{
+    display: inline-block;
+    padding: 20px 20px;
+    color: darkgreen ;
+    background:white;
+    border: 1px solid darkgreen;
+    border-radius: 62px;
+
+}
+
+.keto-button:hover {
+    background: gray;
+    text-transform: uppercase;
+}
+
+.h-tag{
+    color: white;
+    font-size: 2em;
+}
+
+#h2{
+    color: white;
+    font-size: 3em;
 }

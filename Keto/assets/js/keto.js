@@ -64,3 +64,4 @@ $('#generate').on('click', refreshPage)
 var btnEL = $('generate')
 // $('#generate').on('click', getRecipe)
 $(window).on('load', getRecipe);
+

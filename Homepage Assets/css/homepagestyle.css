@@ -5,6 +5,15 @@ body {
     
 }
 
+#h1 {
+    font-size: 50px;
+}
+
+#topSection {
+
+    text-align: center;
+}
+
 
 .topicSection {
     display: flex;
@@ -14,4 +23,26 @@ body {
     justify-content: space-around;
     
     
+}
+
+#submitButton {
+    background-color: lightgrey;
+    width: 100px;
+}
+
+#textarea {
+
+    width: 400px;
+    height: 60px;
+}
+
+footer {
+    text-align: center;
+}
+
+#firstImage {
+    
+    border-radius: 90px;
+    align-items: center;
+   
 }
