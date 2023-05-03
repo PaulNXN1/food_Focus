@@ -4,6 +4,21 @@
   box-sizing: border-box;
 }
 
+
+#allergy{
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+#allergies{
+  border: 2px solid black;
+  display: block;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+
 .generated-list:hover {
   background-color: rgb(182, 235, 182);
 
@@ -36,4 +51,5 @@
   40%, 100% {
     transform: rotateZ(0);
   }
+
 }
