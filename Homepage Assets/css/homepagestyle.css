@@ -5,6 +5,11 @@ body {
     
 }
 
+#topSection {
+
+    text-align: center;
+}
+
 
 .topicSection {
     display: flex;
@@ -14,4 +19,19 @@ body {
     justify-content: space-around;
     
     
+}
+
+#submitButton {
+    background-color: lightgrey;
+    width: 100px;
+}
+
+#textarea {
+
+    width: 400px;
+    height: 60px;
+}
+
+footer {
+    text-align: center;
 }
