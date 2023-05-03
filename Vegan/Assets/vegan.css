@@ -20,6 +20,9 @@
   padding-bottom: 2px;
 }
 
+p:hover {
+  color: rgb(62, 181, 62);
+}
 .generated-list:hover {
   background-color: rgb(182, 235, 182);
 
