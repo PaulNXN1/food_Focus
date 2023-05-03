@@ -3,3 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+#allergy{
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+#allergies{
+  border: 2px solid black;
+  display: block;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
