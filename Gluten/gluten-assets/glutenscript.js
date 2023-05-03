@@ -13,7 +13,8 @@ var heading = document.getElementById('heading');
 var h1El = document.createElement('h1');
 // modify element h1
 h1El.textContent = "A Gluten Free Life";
-h1El.setAttribute("class", "animate__animated animat__bounceOut");
+h1El.setAttribute("class", "animate__animated animate__fadeInDown");
+
 // append 
 heading.append(h1El);
   }
@@ -41,41 +42,9 @@ function getRecipe() { //responsible for data needed
     ingredientNutrients.push(result[0].recipe.totalNutrients)
     // call next function
 
-
-<<<<<<< HEAD
   })
-  .then(function() {
-      for( i = 0; i < ingredientLinesData.length; i++) {
-        // console.log(processRecipeNutrients);
-        console.log(ingredientLinesData[0.0]);
-        var liEL = document.createElement('li')
-        $.each( ingredientLinesData[0.0], function(key, value){
-        $(ingredEL).append('<li>' + value + '</li>')
-
-      })
-=======
-function recipeEl() {
-  // call area that heading will go
-  var recipeSearchEl = document.getElementById('recipe-Search');
-  // create inputbox and label
-  var recipeInputEl = document.createElement('input');
-  var recipeLabel =document.createElement("label");
-  var recipeButton =document.createElement('button');
   
-  // modify element h1
-  recipeLabel.setAttribute ('id','recipeLabel');
-  recipeLabel.textContent = "Search for GF Recipes";
-  recipeInputEl.setAttribute ('id','input');
-  recipeButton.textContent='SUBMIT';
-	recipeButton.setAttribute('id', 'submit');
-  // append 
-  // recipeLabel.appendChild(recipeSearchEl);
-  recipeSearchEl.appendChild(recipeLabel);
-  recipeInputEl.appendChild(recipeSearchEl);
-	recipeButton.appendChild(recipeSearchEl);
->>>>>>> 479fe3546381366e2b7988c996a263d49b4722fe
-    }
-  })
+
   .then(function() {
     console.log(ingredientNutrients)
     var omega3 = ingredientNutrients[0].FAPU.label + ' : ' + ingredientNutrients[0].FAPU.quantity.toFixed(2) + ' ' + ingredientNutrients[0].FAPU.unit
