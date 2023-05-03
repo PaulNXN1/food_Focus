@@ -29,6 +29,7 @@
   animation-name: wiggle;
   animation-duration: 1s;
 }
+
 /* Keyframes */
 @keyframes wiggle {
   0%, 6% {
