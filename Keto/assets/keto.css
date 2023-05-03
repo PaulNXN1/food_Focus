@@ -59,7 +59,8 @@ a:hover{
     display: inline-block;
     background: darkgreen;
     border: 5px solid grey;
-    border-radius: 40px;
+    border-radius: 50px;
+    align-self: center;
 }
 
 .keto-button{
@@ -68,7 +69,7 @@ a:hover{
     color: darkgreen ;
     background:white;
     border: 1px solid darkgreen;
-    border-radius: 5px;
+    border-radius: 62px;
 
 }
 
@@ -79,8 +80,10 @@ a:hover{
 
 .h-tag{
     color: white;
+    font-size: 2em;
 }
 
 #h2{
     color: white;
+    font-size: 3em;
 }
