@@ -3,3 +3,37 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.generated-list:hover {
+  background-color: rgb(182, 235, 182);
+
+} 
+
+#generate:hover {
+  animation-name: wiggle;
+  animation-duration: 1s;
+}
+/* Keyframes */
+@keyframes wiggle {
+  0%, 6% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-10deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(4deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
