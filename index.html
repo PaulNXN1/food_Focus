@@ -16,6 +16,13 @@
 
     <h1><strong>Welcome to Food Focus</strong></h1>
     <p>A Page of Healthy Topics to Find Simple Recipes to Promote Focus!</p>
+    <br><br>
+    <section id="topSection">
+        <p>Our purpose:</p>
+        <p> Focus is key for novice developers, this site provides three healthy food groups [Vegan, Gluten-Free, Keto]
+        </p>
+
+    </section>
 
 </header>
 
@@ -23,12 +30,12 @@
 
 <body>
 
-  
+
 
     <br><br><br><br>
 
-<p> <u>Click on an Image Below to View a Specific Food Category </u></p>
-<br>
+    <p> <u>Click on an Image Below to View a Specific Food Category </u></p>
+    <br>
 
     <section class="topicSection">
         <a href="Vegan/veganIndex.html"><img src="./Homepage Assets/vegan_mainIMG.jpg" alt="Vegan" width="500"
@@ -42,28 +49,40 @@
 
     <br>
 
-      <div>
-        <p> We would love to hear from you!</p>  
+    <div>
+        <p> We would love to hear from you!</p>
         <p> Share your experience!</p>
-      </div>
+    </div><br><br>
 
+    <div>
+
+        <p>If you'd like to get more information about these food groups, please let us know what we can provide!</p>
+
+        <form>
+        
+            <p>Tell us your name & thoughts!</p>
+            <textarea id="textarea"></textarea><br>
+            <button id="submitButton">Submit</button>
+        </form>
+    </div>
+
+<br><br>
     <span class="relative flex h-3 w-10">
         <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
         <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
     </span>
-
-
-  
-
-    <a href = "mailto: paulnxn1@gmail.com">
+    <a href="mailto: paulnxn1@gmail.com">
         <button
             class="transition ease-in-out delay-200 bg-silver-500 hover:-translate-y-1 hover:scale-130 hover:bg-yellow-500 duration-300 button">
-            Click here: Email or Contact Us!
+            Email or Contact Us!
         </button></a>
 
+        <br> <h3 class = "message"></h3>
+
+        <script src="./homepage.js"></script>
 
 </body>
 
-
+<footer> Made by Group 3</footer>
 
 </html>
