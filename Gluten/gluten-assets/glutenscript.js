@@ -20,6 +20,8 @@ heading.append(h1El);
   }
 headerBanner()
 
+
+
 function getRecipe() { //responsible for data needed
   const url = "https://api.edamam.com/api/recipes/v2?type=public&app_id=8f015481&app_key=04f42a1106f1c5216b12df8b78208f16&diet=balanced&health=keto-friendly&mealType=Breakfast&mealType=Dinner&mealType=Lunch&random=true"
   $.ajax( {

@@ -1,7 +1,7 @@
 body {
     background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
 
 /* Tailwind format */
 #header{
@@ -27,12 +27,15 @@ h1 {
  
 }
 /* from https://wdexplorer.com/20-examples-beautiful-css-typography-design/ */
-h1 { color: #d54d7b; font-family: "Great Vibes", cursive; font-size: 165px; line-height: 160px; font-weight: normal; margin-bottom: 0px; margin-top: 40px; text-align: center; text-shadow: 0 1px 1px #fff; }
+h1 { color: #d54d7b; font-family: "Great Vibes", cursive; font-size: 110px; line-height: 160px; font-weight: normal; margin-bottom: 0px; margin-top: 40px; text-align: center; text-shadow: 0 1px 1px #fff; }
 h1::before {  
   transform: scaleX(0);
   transform-origin: left right;
 }
 
+#main-image img {
+  border: 5px solid darkblue;
+}
 
 
 h2 {
@@ -42,6 +45,7 @@ h2 {
 p {
   text-align: center;
 }
+
 .center {
         display: block;
         margin-left: auto;
@@ -52,8 +56,7 @@ p {
 
 #image-container {
     box-sizing: border-box;
-    
-    max-width: 150%;
+     max-width: 150%;
     margin: 10px;
     padding: 5px;
       
@@ -62,9 +65,7 @@ p {
   box-sizing: border-box;
 } */
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+
 
 /* Float four columns side by side */
 .column {
@@ -116,10 +117,12 @@ body {
   border: 5px solid darkblue;
   height: 275px;
   width: 350px;
-  margin-left: 500px;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 h3{
   text-align: center;
+  text-decoration: underline;
 }
 
 #nutrient {
@@ -128,6 +131,7 @@ h3{
 
  ul {
     list-style: none;
+    text-align: center;
   }
  ul li::before {
     content: "";
@@ -141,3 +145,20 @@ h3{
     margin-right: 0.2rem;
   }
 
+#recipe-site {
+  align-items: center;
+  padding: 1%;
+  margin-left: -20%;
+}  
+#generate {
+  margin-left: 375px;
+  margin-right: 375px ;
+  background-color: white; 
+  color: darkblue; 
+  border: 2px solid darkblue;
+}
+
+#generate:hover {
+  background-color: darkblue;
+  color: white;
+}
