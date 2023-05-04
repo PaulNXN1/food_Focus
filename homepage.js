@@ -21,3 +21,7 @@ function renderMessage() {
     document.getElementById("message").textContent = `${afterText} Thank you!`
     
 }
+
+
+
+
