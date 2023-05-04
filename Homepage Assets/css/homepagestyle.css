@@ -5,15 +5,19 @@ body {
     
 }
 
+/*Main H1 Header*/
 #h1 {
     font-size: 50px;
 }
+
 
 #topSection {
 
     text-align: center;
 }
 
+
+/*Section portion for the three food groups - image links*/
 
 .topicSection {
     display: flex;
@@ -25,10 +29,14 @@ body {
     
 }
 
+/*Where the user clicks submit after typing in text area*/
+
 #submitButton {
     background-color: lightgrey;
     width: 100px;
 }
+
+/*Block where user enters in data*/
 
 #textarea {
 
@@ -39,6 +47,8 @@ body {
 footer {
     text-align: center;
 }
+
+/*First Image on the page*/
 
 #firstImage {
     
