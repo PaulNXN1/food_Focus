@@ -30,7 +30,7 @@ The assignment is complete when all aspects of the UPENN Module Project #1 Accep
 
 1. URL to Deployed Project Site:  https://paulnxn1.github.io/food_Focus/
 2. URL to Repository:  https://github.com/PaulNXN1/food_Focus
-3. URL to the portfolio where the repository is location: https://github.com/PaulNXN1
+3. URL to the portfolio where the repository is located: https://github.com/PaulNXN1
 
 Image example of the HomePage:
 
